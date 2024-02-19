@@ -1,0 +1,55 @@
+=========================== Configuration ==============================
+                          OS Type : linux
+                     Machine Type : x86_64
+
+                           prefix : /usr
+                      exec_prefix : ${prefix}
+                       includedir : ${prefix}/include
+                           libdir : ${exec_prefix}/lib
+                      datarootdir : ${prefix}/share
+                          makedir : ${datarootdir}/ptlib/make
+
+                  Memory checking : None
+
+                     DNS Resolver : yes
+                             IPv6 : yes
+            Packet Capture (PCAP) : yes
+               Expat (XML parser) : yes
+                          OpenSSL : yes
+                          SASL v1 : no
+                          SASL v2 : yes
+                         OpenLDAP : yes
+                             ODBC : yes
+                              Lua : yes
+                  Javascript (V8) : no
+                     Festival TTS : no
+                           Curses : yes
+                        GStreamer : no
+
+                            Audio : yes
+                             ALSA : yes
+                              ESD : no
+                              OSS : yes
+                            Pulse : no
+                              Sun : no
+                              shm : no
+
+                            Video : yes
+                             SDL2 : no
+                     Video4linux  : no
+                     Video4linux2 : yes
+                              BSD : no
+                    IEEE-1394/AVC : no
+                    IEEE-1394/DC  : no
+                           FFMPEG : no
+                      ImageMagick : yes (after v7)
+                        JPEG File : yes
+
+                     Advanced C++ : -std=c++17
+                         CPPFLAGS :   -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -I/usr/include/lua5.3     -I/usr/include/ImageMagick-7 -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -DMAGICKCORE_CHANNEL_MASK_DEPTH=32 -Wall -Wno-unknown-pragmas  -DP_64BIT -fno-diagnostics-show-caret -D_REENTRANT -DPTRACING=2
+                           CFLAGS : -fno-omit-frame-pointer -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection -pthread -D__STDC_CONSTANT_MACROS
+                         CXXFLAGS : -fexceptions -Wreorder -felide-constructors -Wno-overloaded-virtual -fno-omit-frame-pointer -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection -Wp,-D_GLIBCXX_ASSERTIONS -Wno-deprecated-declarations -pthread
+                          LDFLAGS : -rdynamic -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now
+                             LIBS : -ldl -lodbc -lncursesw -llua5.3 -lm -lexpat -lssl -lcrypto -lldap -llber -lsasl2 -ljpeg -lMagickWand-7.Q16HDRI -lMagickCore-7.Q16HDRI -lpcap -lresolv -lrt  
+
+========================================================================

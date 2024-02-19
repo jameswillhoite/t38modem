@@ -1,0 +1,121 @@
+=========================== Configuration ==============================
+                          OS Type : linux
+                     Machine Type : x86_64
+
+                           prefix : /usr
+                      exec_prefix : ${prefix}
+                       includedir : ${prefix}/include
+                           libdir : ${exec_prefix}/lib
+                      datarootdir : ${prefix}/share
+                          makedir : ${datarootdir}/opal/make
+
+   Audio Codec plugin install dir : ${libdir}/opal-3.18.8/codecs/audio
+   Video Codec plugin install dir : ${libdir}/opal-3.18.8/codecs/video
+        LID plugin install prefix : ${libdir}/opal-3.18.8/lid
+        FAX plugin install prefix : ${libdir}/opal-3.18.8/fax
+
+                              GSM : yes (internal)
+                          GSM-AMR : yes
+                             iLBC : yes (internal)
+                             iSAC : yes
+                            Speex : yes (system)
+                            G.722 : yes
+                          G.722.1 : no
+                          G.722.2 : yes
+                            G.726 : yes
+                            LPC10 : yes
+                        IMA_ADPCM : yes
+                              SBC : no (missing directory /tmp/makepkg-chris/opal/src/opal-3.18.8/plugins/audio/SBC/bluez_sbc)
+                             CELT : no (package celt not found)
+                             SILK : yes
+                             Opus : yes (system)
+
+                      H.261 (vic) : yes
+            H.263/H.263+ (ffmpeg) : no (missing FFMPEG)
+                    VideoLAN x264 : no
+                   Cisco OpenH264 : no (missing shared library)
+                              VP8 : yes (system)
+                           THEORA : yes (system)
+                     MPEG4 Part 2 : no (missing FFMPEG)
+
+                     SpanDSP FAX  : yes (system)
+
+         Voicetronics VPB support : no (package vpb not found)
+
+                     Advanced C++ : -std=c++17
+                         CPPFLAGS :      -I/usr/include/opus  -Wall -Wno-unknown-pragmas 
+                           CFLAGS : -fno-omit-frame-pointer -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection
+                         CXXFLAGS : -Wno-overloaded-virtual -fno-omit-frame-pointer -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection -Wp,-D_GLIBCXX_ASSERTIONS -Wno-deprecated-declarations
+                          LDFLAGS : -rdynamic -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now
+                             LIBS : 
+
+========================================================================
+configure: WARNING: unrecognized options: --disable-libavcodec
+
+=========================== Configuration ==============================
+                          OS Type : linux
+                     Machine Type : x86_64
+
+                           prefix : /usr
+                      exec_prefix : ${prefix}
+                       includedir : ${prefix}/include
+                           libdir : ${exec_prefix}/lib
+                      datarootdir : ${prefix}/share
+                          makedir : ${datarootdir}/opal/make
+
+                Plug in directory : ${libdir}/opal-3.18.8
+                  PTLib directory : /usr (pkg-config)
+
+                            Audio : yes
+                            Video : yes
+
+                            H.323 : yes
+                            H.450 : yes
+                            H.460 : yes
+                H.460.18/19 (NAT) : yes
+                            H.239 : yes
+                            H.501 : yes
+
+                              SIP : yes
+                 SIPIM capability : yes
+                  MSRP capability : yes
+         RFC-4103 (IM) capability : yes
+
+                     IAX2 support : yes
+      Cisco SCCP (skinny) support : yes
+            Line Interface Device : yes
+                      CAPI (ISDN) : no
+                     DAHDI (PSTN) : no
+
+                  T.38 capability : yes
+                T.38 FAX protocol : yes
+     H.224 (H.221 media channels) : yes
+   H.281 (Far End Camera Control) : yes
+
+                             SRTP : yes (system)
+               RFC-4175 Raw Video : yes
+     RFC-2435 JPEG (experimental) : no
+      Accoustic Echo Cancellation : yes
+  Packet Loss Concealment (G.711) : yes
+    RTCP Extended Reports support : yes
+     RTP Forward Error Correction : no
+
+         PC Sound System Endpoint : yes
+                      IVR support : yes
+       Media mixing (conferences) : yes
+                         Presence : yes
+     Statistics gathering support : yes
+        Script language interface : yes
+                     SWIG support : yes (/usr/bin/swig)
+                     Java support : no
+                  C-sharp support : yes
+                     Ruby support : no
+
+                     Advanced C++ : -std=c++17
+                         CPPFLAGS :   -Wall -Wno-unknown-pragmas  -I${includedir}/opal
+                           CFLAGS : -fno-omit-frame-pointer -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection
+                         CXXFLAGS : -Wno-overloaded-virtual -fno-omit-frame-pointer -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection -Wp,-D_GLIBCXX_ASSERTIONS -Wno-deprecated-declarations
+                          LDFLAGS : -rdynamic -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now
+                             LIBS : -lspeexdsp -lsrtp2 
+
+========================================================================
