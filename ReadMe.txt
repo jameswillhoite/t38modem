@@ -1,3 +1,12 @@
+I forked this repo so create a archive for the current flavor of Ubuntu I have built ptlib, opal, and t38modem on.
+
+
+Below is the original Readme file
+
+
+-----------------------------------------------------------------------------------------
+
+
 /*
  * README
  *
